@@ -19,7 +19,6 @@ async function getTransactionDate(transactionHash) {
     // Convierte bigint a string para que no haya problemas
     var timestamp = block.timestamp.toString();
     timestamp = timestamp * 1000;// Multiplica por 1000 para convertir a milisegundo y cambiarlo a int
-    const date = new Date(timestamp); // Lo ponemos en formato legible
     return timestamp; // Devolvemos el valor
 
   } catch (error) {
